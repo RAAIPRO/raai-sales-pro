@@ -1,18 +1,22 @@
 ---
 name: sales-pro
-version: 3.5.1
-description: > AI-Продажник PRO — полная система продаж для РОПа и собственника. Скрипты с ветвлениями, SPIN-продажи, Challenger Sale, BANT+MEDDIC квалификация лидов, pipeline management, win/loss analysis, unit-экономика, follow-up цепочки 7 шагов, КП с ROI, дожим, разбор диалогов. Заменяет менеджера-джуниора на 50-70%, усиливает сеньора на 30-40%. Русский язык нативно, 6 методологий мирового класса, dogfooded в RAAI. Russian: скрипт продаж, квалификация лида, работа с возражениями, дожим, следить за воронкой, коммерческое предложение, follow up, РОП отчёт, пайплайн, win loss анализ, unit экономика, средний чек, конверсия, холодный звонок, SPIN, Challenger Sale, BANT, MEDDIC. English: sales script, lead qualification, objection handling, follow-up, sales funnel, pipeline report, win loss, sales manager, deal closing, SPIN selling, Challenger Sale, cold call script, BANT qualification, MEDDIC scoring, proposal with ROI.
-metadata: openclaw: emoji: "💼" level: L1 always: false requires: env: - LLM_API_KEY optional: env: - TELEGRAM_BOT_TOKEN - GOOGLE_SHEETS_CREDENTIALS_JSON - AMOCRM_API_KEY - BITRIX24_WEBHOOK_URL
-triggers: - скрипт продаж - квалификация лида - работа с возражениями - дожим - follow up - холодный звонок - BANT - MEDDIC - pipeline - воронка продаж - win loss - РОП отчёт - пайплайн - коммерческое предложение - unit экономика - разбор диалога - скрипт звонка - скрипт переписки - sales script - lead qualification - objection handling - sales funnel - pipeline report - SPIN selling - Challenger Sale - cold call script - deal closing - follow-up sequence
-tags: - russian - sales - crm - sales-enablement - dogfooded - b2b - rop
+version: 3.5.2
+author: RAAI (OOO RAAI)
+license: MIT
 price: 30000
---- ## 5 дифференциаторов sales-pro 1. **Русский нативно + BANT/MEDDIC** — единственная коробка в OpenClaw-экосистеме с полной BANT+MEDDIC квалификацией на русском
-2. **15 режимов системно** — конкуренты (echo-sales-ai, sales-coach-pro, lead-qualifier) делают узкие: один скрипт или один квалификатор
-3. **Proof с рублёвыми цифрами** — конверсия лид→сделка +20-40%, цикл сделки -25-40%, follow-up возвращает 30% «тихих»
-4. **Telegram-интерфейс для менеджеров** — через TELEGRAM_BOT_TOKEN РОП рассылает скрипты и получает pipeline-отчёты прямо в TG
-5. **Dogfooded в RAAI** — работаем по этой системе сами перед отгрузкой ## 3 уровня продукта - **Скилл-коробка** (этот файл): 15 режимов, установка за 15 мин, цена **30 000 ₽**
-- **Агент под ключ**: скилл + n8n интеграция с amoCRM/Битрикс24/Google Sheets/Telegram, разворачивается RAAI, цена **50-150 000 ₽**
-- **Приложение** (уровень 3): client-owned sales app + UI + CRM analytics + head-of-sales reporting, price **from 100 000 ₽** --- # AI-Продажник PRO Отдел продаж в одном агенте. Скрипты с ветвлениями, SPIN-продажи, Challenger Sale,
+price_currency: RUB
+description: >
+  Full sales system: scripts, objection handling, follow-up, BANT and MEDDIC qualification, pipeline management and commercial offers.
+tags:
+- sales
+- crm
+- pipeline
+- qualification
+- follow-up
+- dogfooded
+---
+
+# AI-Продажник PRO Отдел продаж в одном агенте. Скрипты с ветвлениями, SPIN-продажи, Challenger Sale,
 управление pipeline, win/loss анализ, unit-экономика. Продаёт системно — не по наитию. --- ## Режимы работы | Режим | Команда | Результат |
 |-------|---------|-----------|
 | Скрипт звонка | `скрипт звонка: [продукт]` | Скрипт с ветвлениями по возражениям |
